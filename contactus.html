@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="hmt.css">
+    </head>
+    <body style="background-image:url('Images/landingpage5.jpg')">
+      <!--Navigation Bar Start-->
+      <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="hmt.html" style="font-size:25px;" id="OS"><img src="Images/logo2.jpg" style="height:50px; width:60px">OPTIMUM SAFAR</a>
+          <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tours
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Economical Tours</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Meditate Tours</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Luxury Tours</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'">Contact Us</a>
+              </li>
+              <li class="nav-item">
+              <button type="button" class="btn btn-dark btn-outline-dark">LogOut</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Navigation Bar Ends-->
+
+
+      <!--Contact Form Starts-->
+      <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-4">
+                    <h1 style="text-align:center; text-decoration:underline"><pre>MESSAGE US</pre></h1>
+                    <p class="lead" style="text-align:center" >Please share your valuable message to us through this form.</p>
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" method="post" role="form">
+                      <div class="messages"></div>
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_need">Please specify your need *</label>
+                      <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                          <option value=""></option>
+                          <option value="Request quotation">Request quotation</option>
+                          <option value="Request copy of an invoice">Request copy of an invoice</option>
+                          <option value="Other">Other</option>
+                      </select>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+              </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                          <strong>*</strong> These fields are required.
+                    </div>
+                </div>
+              </div>
+            </form>
+              </div>
+            </div>
+              <h4 class="text-center text-capitalize">OR</h4>
+              <h5 class="text-center text-capitalize pt-2"><u>Connect Us via:</u></h5>
+              <div class="col-12 social pl-5 text-center pt-2" style="font-size:3rem; padding:4rem" id="contact">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+        </div>
+        </section>
+        <!--Contact form ends-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>AboutUs</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <title>About Us</title>
+</head>
+<body>
+  <section>
+  <!--Navigation Bar Start-->
+  <div class="wrapper">
+  <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>My Company</h3>
+      </div>
+    <ul class="list-unstyled components">
+      <p class="lead">Navigation</p>
+        <li class="active">
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="aboutus.html">Recruiters</a>
+        </li>
+        <hr>
+        <p class="lead">Jobs</p>
+        <li>
+          <a href="#">Receive Candidates</a>
+        </li>
+        <li>
+          <a href="homepage.html">Live Jobs</a>
+        </li>
+        <hr>
+        <p class="lead">Support</p>
+        <li>
+          <a href="contactus.html">Help Desk</a>
+        </li>
+        <li>
+          <a href="#">Tutorial</a>
+        </li>
+        <li>
+          <a href="contactus.html">FeedBack</a>
+        </li>
+      </ul>
+    </nav>
+  <!-- Page Content Holder -->
+  <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="fas fa-align-justify"></i>
+        </button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand" href="homepage.html" style="border:2px solid black; width:60px; padding-left:5px;">Logo</a>
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-envelope" style="font-size:30px" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-users" style="font-size:30px; color:black" aria-hidden="true"></i></a>
+              </li>
+              <span style="border-right: 2px solid black;">&nbsp;</span>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size:30px; color:black" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:20px; padding-right:45px;">
+                <!--here we will fetch the user name which we input in login form-->
+               <%= username %>
+                </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Something else here</a>
+             </div>
+        </li>
+      </ul>
+     </div>
+    </div>
+  </nav>
+
+  </section>
+  <!--Navigation Bar Ends-->
+
+  <!--Information Starts-->
+  <section>
+  <div class="container-fluid py-0">
+    <hr class="w-75 mx-auto">
+    <h1 class="text-center text-capitalize pt-2">About Us</h1>
+    <hr class="w-75 mx-auto pt-3">
+    <pre class="lead" style="color:#696969;">
+       We believe in hiring good talent.
+            </pre>
+    </div>
+    </section>
+  <!--Information Ends-->
+
+  <!--Meet the team portion2 starts-->
+  <section>
+  <div class="container-fluid py-2">
+    <h1 class="text-center text-capitalize pt-2">TEAM</h1>
+    <hr class="w-25 mx-auto pt-5">
+    <div class="column">
+      <div class="card h-100">
+        <img src="#" width="40px" height="40px" class="imgr"></img>
+        <div class="container">
+          <h2>Sushrut Kansakar</h2>
+          <hr w-25 mx-auto pt-1>
+          <p class="title" style="color:#696969">Student at Lovely Professional University</p>
+          <p>+XX-YYYYYYYYYY</p>
+          <hr w-100 mx-auto pt-1>
+          <div class="col-12 social1 padding" id="contact">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="column">
+      <div class="card h-100">
+        <img src="#" width="40px" height="40px" class="imgr"></img>
+        <div class="container">
+          <h2>Mr.X</h2>
+          <hr w-25 mx-auto pt-1>
+          <p class="title" style="color:#696969">HR</p>
+          <p>+XX-YYYYYYYYYY</p>
+          <hr w-25 mx-auto pt-1>
+          <div class="col-12 social1 padding" id="contact">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--Meet the team portion2 ends-->
+
+  <!--Connect Section Starts-->
+  <div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <hr class="w-25 mx-auto">
+      <h1>Connect Us</h1>
+      <hr class="w-25 mx-auto pt-5">
+    </div>
+    <div class="col-12 social padding">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  </div>
+  <!--Connect Section Ends-->
+
+  <!--Footer Section Starts-->
+  <footer>
+   <div class="container-fluid padding">
+   <div class="row text-center">
+     <div class="col-md-4">
+       <p style="color:black; font-weight:bold;">LOGO</p>
+       <hr class="light">
+       <p>+XX-YYYYYYYYYY</p>
+       <p>+XX-YYYYYYYYYY</p>
+       <p>sushrutkansakar1@gmail.com</p>
+       <p>Office Address</p>
+       <p>City, State, pincode</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Our Hours</h5>
+       <hr class="light">
+       <p>Monday: 9am - 5pm</p>
+       <p>Saturday: 10am - 4pm</p>
+       <p>Sunday: closed</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Service Area</h5>
+       <hr class="light">
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+     </div>
+     <div class="col-12">
+       <hr class="light w-100">
+       <h5>&copy; MY COMPANY</h5>
+     </div>
+   </div>
+  </div>
+  </footer>
+  <!--Footer Sections Ends-->
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>
